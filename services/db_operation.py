@@ -40,9 +40,5 @@ def store_msg(db_name,msg_detail):
 
 	conn.execute(received_msg.insert(),[{"msgid":msg_detail["msgid"],"msgdata":msg_detail["msgdata"]}])
 
-#print get_userdetail("A","ravirnjn88")
-#update_userdetail("A",{"userid":"ravirnjn88" ,"email":"ravirnjn88@gmail.com" ,"name":"Ravi Ranjan" ,"address":"Koramangala, Bangalore"})
-#print get_userdetail("A","ravirnjn88")
-#msg_dump("1234","hello","a")
-#get_endpoint("a/userdetails")
+
 	

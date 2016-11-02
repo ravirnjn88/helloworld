@@ -4,7 +4,7 @@ import requests, json, traceback
 
 
 cel = Celery('tasks', backend='rpc://', broker='amqp://guest@localhost//')
-baseurl = "http://localhost:5000/"
+baseurl = "http://raviranjan.xyz/"
 
 @cel.task
 def sendmsg(endpoint,msgid,msgdata):

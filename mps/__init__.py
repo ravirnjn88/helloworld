@@ -11,7 +11,6 @@ m_s = Blueprint('m_s', __name__)
 
 @m_s.route('/mps/acceptmsg', methods=['POST','GET'])
 def message_pass():
-	print request.method, request.args
 	senders_endpoint = request.args.get('senders_endpoint')
 	msgid = request.args.get('msgid')
 	msgdata = request.args.get('msgdata')

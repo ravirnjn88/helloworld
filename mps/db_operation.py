@@ -28,14 +28,5 @@ def get_endpoint(senders_endpoint):
 	a = conn.execute(s).fetchall()
 	for elem in a:
 		d.append(elem[2])
-	print d
 	return d
-
-
-
-#print get_userdetail("A","ravirnjn88")
-#update_userdetail("A",{"userid":"ravirnjn88" ,"email":"ravirnjn88@gmail.com" ,"name":"Ravi Ranjan" ,"address":"Koramangala, Bangalore"})
-#print get_userdetail("A","ravirnjn88")
-#msg_dump("1234","hello","a")
-#get_endpoint("a/userdetails")
 	
