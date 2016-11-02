@@ -30,3 +30,15 @@ def get_endpoint(senders_endpoint):
 		d.append(elem[2])
 	return d
 	
+# get messages from the database
+def get_msg(db_name):
+	sql_url = mysql_root + db_name
+	engine = create_engine(sql_url)
+	conn = engine.connect()
+
+	metadata = MetaData()
+	received_msg = Table('received_msg', metadata, Column('id', Integer, primary_key=True) , Column('msgid', String(50), primary_key=True), Column('msgdata', String(200)),)
+
+	s = select([received_msg])
+	a = conn.execute(s).fetchall()
+	return a

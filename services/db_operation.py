@@ -40,5 +40,4 @@ def store_msg(db_name,msg_detail):
 
 	conn.execute(received_msg.insert(),[{"msgid":msg_detail["msgid"],"msgdata":msg_detail["msgdata"]}])
 
-
 	
