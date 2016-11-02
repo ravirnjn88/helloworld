@@ -59,4 +59,4 @@ def create_mps_db():
 
 create_db(db_names)
 create_mps_db()
-create_table(db_names, users_data)
+create_table(db_names)

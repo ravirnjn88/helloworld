@@ -47,8 +47,13 @@ def demo():
 
 @m_s.route('/demo/viewmsg', methods=['GET'])
 def demo1():
+    c = get_msg("A")
+    code = "<h3> Messages Received By Service A </h3> <ul>"
+    for elem in c:
+        code = code + "<li>" + elem[1] + " : " + elem[2] + "</li>"
+    code = code + "</ul>"
+    code = code + "<h3> Messages Received By Service B </h3> <ul>"
     c = get_msg("B")
-    code = "<h3> Messages Received By Service B </h3> <ul>"
     for elem in c:
         code = code + "<li>" + elem[1] + " : " + elem[2] + "</li>"
     code = code + "</ul>"
