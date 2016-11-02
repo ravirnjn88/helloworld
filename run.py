@@ -6,5 +6,6 @@ application = Flask(__name__)
 application.register_blueprint(s_s)
 application.register_blueprint(m_s)
 
+
 if __name__ == "__main__":
     application.run()
