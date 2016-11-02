@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name 52.220.164.79 raviranjan.xyz www.raviranjan.xyz;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/ubuntu/helloworld/helloworld.sock;
+    }
+}
