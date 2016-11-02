@@ -1,8 +1,8 @@
-Message Passing System (MPS)
+# Message Passing System (MPS)
 
 The main function of this tool is to facilitate the message passing between different services.
 
-Requirements and installation Instruction
+##Requirements and installation Instruction
 
 1. Code Tested on Ubuntu 14.04	
 
@@ -21,8 +21,19 @@ Requirements and installation Instruction
 
 	```celery -A mps.tasks worker```
 
-Usage:
+##Usage:
 
 1. http://your_server_ip/mps/acceptmsg?senders_endpoint={x}&msgid={x}&msgdata={x}
 
-Demourl: http://raviranjan.xyz/demo
+##DemoUrl: 
+   http://raviranjan.xyz/demo
+
+## Technologies Used
+* Python(Language)
+* Flask (MVC)
+* Celery (Queue Processing)
+* Sqlalchemy (ORM)
+* nginx
+* AWS (Hosting)
+* PEP8ONLINE (Coding Standard)
+* Newrelic (Server Monitoring)
