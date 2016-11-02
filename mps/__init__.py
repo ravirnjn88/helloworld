@@ -67,8 +67,4 @@ def demo1():
 
 @m_s.route('/demo', methods=['GET'])
 def demo2():
-    c = "<body><p><a href='http://raviranjan.xyz/demo/sendmsg' \
-    target='_blank'>Send Message</a></p><p>\
-    <a href='http://raviranjan.xyz/demo/viewmsg'\
-     target='_blank'>Show Received Messages By Services</a></p></body>"
-    return c
+    return render_template('maindemo.html')
