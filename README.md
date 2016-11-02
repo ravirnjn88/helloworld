@@ -1,4 +1,4 @@
-Message Passing Server (MPS)
+Message Passing System (MPS)
 
 The main function of this tool is to facilitate the message passing between different services.
 
@@ -24,3 +24,5 @@ Requirements and installation Instruction
 Usage:
 
 1. http://your_server_ip/mps/acceptmsg?senders_endpoint={x}&msgid={x}&msgdata={x}
+
+Demourl: http://raviranjan.xyz/demo
