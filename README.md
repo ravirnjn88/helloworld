@@ -23,7 +23,9 @@ The main function of this tool is to facilitate the message passing between diff
 
 ##Usage:
 
-1. http://your_server_ip/mps/acceptmsg?senders_endpoint={x}&msgid={x}&msgdata={x}
+1. http://your_server_ip/mps/acceptmsg?senders_endpoint={x}&msgid={y}&msgdata={z}
+
+   x = Endpoint Indentification,	y = Message ID,	z = Message Data
 
 ##DemoUrl: 
    http://raviranjan.xyz/demo
@@ -36,4 +38,3 @@ The main function of this tool is to facilitate the message passing between diff
 * nginx
 * AWS (Hosting)
 * PEP8ONLINE (Coding Standard)
-* Newrelic (Server Monitoring)
